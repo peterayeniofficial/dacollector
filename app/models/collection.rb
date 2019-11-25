@@ -10,7 +10,11 @@ class Collection < ApplicationRecord
 
   def average_rating
     total_rating = reviews.reduce(0){|total, review| total += review.rating}
-    total_rating / total_reviews
+    if total_reviews = 0 
+      total_rating / 1 
+    else 
+      total_rating / total_reviews
+    end
   end
 
   def full_name
