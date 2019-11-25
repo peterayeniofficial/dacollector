@@ -1,0 +1,26 @@
+<section>
+  <div>
+    <%= image_tag @collection.url %>
+    <button>Edit Collection</button>
+    <button>Delete Collection</button>
+  </div>
+  <div>
+    <h2><%= @collection.name %></h1>
+    <p><%= @collection.full_name %>
+    <p><%= @collection.description %></p>
+  </div>
+  <div>
+    <p>Ratings</p></p>
+    <section>
+      <div>
+        <p>Leave a rating</p>
+      </div>
+      <div>
+        <h2><%= @collection.average_rating %></h2>
+        <p><%= @collection.total_reviews %></p>
+      </div>
+    </section>
+
+  </div>
+</section>
+

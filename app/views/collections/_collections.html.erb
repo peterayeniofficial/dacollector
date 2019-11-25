@@ -1,0 +1,8 @@
+<section>
+  <%= @collections.each do |collection| %>
+  <div>
+    <%= image_tag collection.url %>
+    <%= link_to 'View Collection', collection %>
+  </div>
+    <% end %>
+</section>
