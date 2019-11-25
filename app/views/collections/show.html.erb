@@ -1,12 +1,12 @@
 <section>
   <div>
     <%= image_tag @collection.url %>
-    <button>Edit Collection</button>
-    <button>Delete Collection</button>
+    <%= link_to 'Edit Collection', edit_collection_path %>
+    <%= link_to 'Delete Collection', collection_path, method: :delete %>
   </div>
   <div>
     <h2><%= @collection.name %></h1>
-    <p><%= @collection.full_name %>
+    <p>By: <%= @collection.full_name %>
     <p><%= @collection.description %></p>
   </div>
   <div>
@@ -17,7 +17,7 @@
       </div>
       <div>
         <h2><%= @collection.average_rating %></h2>
-        <p><%= @collection.total_reviews %></p>
+        <p>From: <%= @collection.total_reviews %> Ratings</p>
       </div>
     </section>
 
