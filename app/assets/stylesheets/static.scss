@@ -1,3 +1,54 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+
+.main-container {
+    background-color: #0A4DA6;
+    background-image: url('home_image_bg.png');
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-container__content {
+  margin-top: 200px;
+  padding-left: 10rem;
+  width: 90%;
+  color: #FFFFFF;
+}
+
+.main-container__title {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.main-container__btn {
+  background-color: #D97F30;
+  color: #E4E4E4;
+  border-radius: 10px;
+  border: #D97F30 1px solid;
+  font-size: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.main-container__btn, a {
+  text-decoration: none;
+  font-size: 2em;
+  padding: 10px;
+  
+}
+
+.main-container__text {
+  margin-bottom: 25px;
+  font-size: large;
+}
+
+@media (max-width: 600px) { 
+  .main-container__content {  
+    padding-left: 5rem; 
+  }
+}

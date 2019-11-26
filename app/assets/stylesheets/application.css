@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
+
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+footer {
+    color: #FFFFFF;
+    padding-top: 150px;
+    padding-left: 150px;
+    font-size: small;
+
+}

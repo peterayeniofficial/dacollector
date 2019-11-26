@@ -1,3 +1,9 @@
-<h1>DaCollector</h1>
-<p>Collect interesting stuff from the internet</p>
-<%= link_to 'Get Started', new_collection_path %>
+
+<main class="main-container">
+  <div class="main-container__content">
+    <h1 class="main-container__title">DaCollector</h1>
+    <p class="main-container__text">Collect interesting stuff from the internet</p>
+    <%= link_to 'Get Started', new_collection_path, class: 'main-container__btn' %>
+  </div>
+  <%= render '/layouts/footer'%>
+</main>
