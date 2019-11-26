@@ -1,6 +1,183 @@
 // Place all the styles related to the collections controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.collections-main {
+  background-color: #0A4DA6;
+  background-image: url('all_collections_bg.png');
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+.collections {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  grid-auto-rows: auto;
+  width: 60%;
+  margin-top: 30px;
+  padding-left: 10rem;
+  color: #FFFFFF;
+}
+.collection-card {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.collection-card__image-holder {
+  width: 95%;
+  height: 100px;
+  overflow: hidden;
+}
+.collection-card__image {
+  width: 100%;  
+  
+}
+
+.collection-card__btn {
+  background-color: #E29500;
+  color: #E4E4E4;
+  border: #E29500 1px solid;
+  font-size: 10px;
+  display: block;
+  width: 80px;
+  margin-top: 5px;
+  padding: 3px;
+  
+}
+
+.collections-main_header {
+  padding-left: 10rem;
+  margin-top: 105px;
+}
+
+.collections-main_header h1 {
+  color: #E29500;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.collections-main_header p {
+  color: #FFFFFF;
+  font-size: large;
+}
+
+footer {
+  margin-bottom: 50px;
+}
+
+// Show page
+
+.collections-main_show {
+
+  background-color: #594936;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+
+}
+
+.collections-main_show__wrap {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 7%;
+}
+
+.collections-main_show--image__holder {
+  width: 95%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.collections-main_show--image__img {
+  padding-bottom: 10px;
+
+}
+.collections-main_show--image__btns {
+  margin-top: 10px;
+}
+
+.collections-main_show--image {
+  width: 30%;
+  padding: 20px;
+  height: 200px;
+ 
+}
+
+.collections-main_show--content {
+  flex: 1;
+}
+
+.collections-main_show--image {
+  flex: 1;
+}
+
+.collection-main_show__btn {
+  background-color: #E29500;
+  color: #E4E4E4;
+  border: #E29500 1px solid;
+  font-size: 10px;
+  width: 100px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.collections-main_show--content__details {
+  border-bottom: #E29500 1px solid;
+  color: #FFFFFF;
+}
+
+.collections-main_show--content__details h2 {
+  color: #E29500;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.collections-main_show--content__details p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+}
+
+.collections-main_show--content__ratings {
+  margin-top: 10px;
+}
+
+.collections-main_show--content__ratings h2 {
+  color: #E4E4E4;
+}
+
+.collections-main_show--content__rate_wrap {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 20px;
+  align-content: space-around;
+  flex-direction: row;
+  width: 300px;
+}
+
+.collections-main_show--content__rated {
+  flex: 1;
+  border-right: #E4E4E4 1px solid;
+  margin-left: 40px;
+  align-self: initial;
+  align-items: flex-end;
+  
+}
+
+.collections-main_show--content__rate {
+  flex: 1;
+  padding-left: 15px;
+}
+
+
+
 
 .checked {
     color: orange;

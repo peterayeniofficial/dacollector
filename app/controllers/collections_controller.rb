@@ -1,6 +1,6 @@
 class CollectionsController < ApplicationController
   def index
-    @collections = Collection.all
+    @collections = Collection.all.take(8)
   end
 
   def show

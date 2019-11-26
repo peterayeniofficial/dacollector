@@ -1,27 +1,46 @@
+<main class="collections-main_show">
 <section>
-  <div>
-    <%= image_tag @collection.url %>
-    <%= link_to 'Edit Collection', edit_collection_path %>
-    <%= link_to 'Delete Collection', collection_path, method: :delete %>
-  </div>
-  <div>
-    <h2><%= @collection.name %></h1>
-    <p>By: <%= @collection.full_name %>
-    <p><%= @collection.description %></p>
-  </div>
-  <div>
-    <p>Ratings</p></p>
-    <section>
-      <div>
-        <p>Leave a rating</p>
-        <%= render 'rating' %>
-      </div>
-      <div>
-        <h2><%= @collection.average_rating %></h2>
-        <p>From: <%= @collection.total_reviews %> Ratings</p>
-      </div>
-    </section>
 
-  </div>
+  <div class="collections-main_show__wrap">
+
+    <div class="collections-main_show--image">
+      <div class="collections-main_show--image__holder">
+        <%= image_tag @collection.url, class: 'collections-main_show--image__img' %>
+      </div>
+      <div class="collections-main_show--image__btns">
+        <%= link_to 'Edit Collection', edit_collection_path, class: 'collection-main_show__btn' %>
+        <%= link_to 'Delete Collection', collection_path, method: :delete, class: 'collection-main_show__btn' %>
+      </div>
+    </div>
+
+    <div class="collections-main_show--content">
+
+      <div class="collections-main_show--content__details">
+        <h2><%= @collection.name %></h1>
+        <h3>By: <%= @collection.full_name %></h3>
+        <p><%= @collection.description %></p>
+      </div>
+
+      <div class="collections-main_show--content__ratings">
+        <h2>Ratings</h2>
+        <section class="collections-main_show--content__rate_wrap">
+          <div class="collections-main_show--content__rated">
+            <p>Leave a rating</p>
+            <%= render 'rating' %>
+          </div>
+          <div class="collections-main_show--content__rate">
+            <h3><%= @collection.average_rating %></h3>
+            <p>From: <%= @collection.total_reviews %> Ratings</p>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+  
+  
 </section>
+<%= render '/layouts/footer'%>
+</main>
+
 
